@@ -1,0 +1,105 @@
+body {
+	background: #fafafa;
+	position: relative;
+}
+td {
+	background: #fff;
+}
+.btn {
+	background: #ff5757;
+	border-color: #cb3737;
+	color: #fff;
+	width: 100%;
+}
+.btn:hover {
+	background: #cb3737;
+}
+.form-control:focus {
+	border-color: rgba(203, 55, 55, 0.5);
+	-webkit-box-shadow: 0 0 0 0.2rem rgba(203, 55, 55, 0.25);
+	box-shadow: 0 0 0 0.2rem rgba(203, 55, 55, 0.25);
+}
+.error {
+	color: #cb3737;
+}
+.success {
+	color: #009b4d;
+}
+.gram {
+	font-weight: bold;
+	font-style: italic;
+}
+#heading {	
+	background: #cb3737;
+	font-size: calc(3vw + 3vh);
+}
+#randomWord {
+	font-size: 3.5em;
+}
+#countdown,
+#score,
+#words {
+	font-size: 1.5em;
+}
+#messages {
+	display: none;
+	font-size: 1.5em;
+}
+#endGame,
+#newWord,
+#checkWord,
+#startGame {
+	float: right;
+	-webkit-transition: 300ms ease-in-out;
+	transition: 300ms ease-in-out;
+}
+#checkWord {
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+}
+#startGame {
+	float: left;
+}
+#endGame {
+	float: left;
+	display: none;
+}
+#resetBestScore {
+	cursor: pointer;
+}
+#resetBestScore:hover {
+	font-weight: bold;
+}
+#rules {
+	text-align: justify;
+}
+#loader {
+	margin: 10px auto;
+	font-size: 40px;
+}
+#footer {	
+	background: #cb3737;
+	position: absolute;
+	bottom: 0;
+}
+#footer a {
+	color: #fff;
+}
+@media (max-width: 1023px) {
+	h1,
+	h2 {
+		font-size: 2em;
+	}
+	#countdown,
+	#score {
+		font-size: 1em;
+	}
+	#endGame > span,
+	#newWord > span,
+	#startGame > span {
+		display: none;
+	}
+	#rules {
+		text-align: left;
+	}
+}
