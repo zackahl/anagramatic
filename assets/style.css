@@ -1,18 +1,28 @@
 body {
-	background: #fafafa;
 	position: relative;
+	background: url("wave.svg");
+	background-color: #fafafa;
+	background-attachment: fixed;
+	background-position: bottom;
+	background-repeat: no-repeat;
+	background-size: contain;
+	min-height: 80vh;
+}
+table {
+	border-radius: 5px;
 }
 td {
 	background: #fff;
 }
-.btn {
+.btn-primary {
 	background: #ff5757;
 	border-color: #cb3737;
 	color: #fff;
 	width: 100%;
 }
-.btn:hover {
+.btn-primary:hover {
 	background: #cb3737;
+	color: #fff;
 }
 .form-control:focus {
 	border-color: rgba(203, 55, 55, 0.5);
@@ -29,7 +39,11 @@ td {
 	font-weight: bold;
 	font-style: italic;
 }
-#heading {	
+#countdown,
+#score {
+	font-family: monospace;
+}
+#heading {
 	background: #cb3737;
 	font-size: calc(3vw + 3vh);
 }
@@ -74,30 +88,28 @@ td {
 	text-align: justify;
 }
 #loader {
-	margin: 10px auto;
-	font-size: 40px;
+	width: 3rem;
+	height: 3rem;
 }
-#footer {	
+#footer {
 	background: #cb3737;
 	position: absolute;
-	bottom: 0;
+	bottom: -20vh;
+	min-height: 5vh;
 }
 #footer a {
 	color: #fff;
 }
-@media (max-width: 1023px) {
-	h1,
-	h2 {
-		font-size: 2em;
+::-webkit-scrollbar {
+	display: none;
+}
+@media (max-width: 768px) {
+	#randomWord {
+		font-size: 3em;
 	}
 	#countdown,
 	#score {
-		font-size: 1em;
-	}
-	#endGame > span,
-	#newWord > span,
-	#startGame > span {
-		display: none;
+		font-size: 1.5em;
 	}
 	#rules {
 		text-align: left;
