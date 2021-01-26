@@ -51,6 +51,11 @@ $(document).ready(function () {
 			$('#loader').hide();
 		}
 	});
+
+	// Get current year for copyright
+	var date = new Date();
+	var year = date.getFullYear();
+	document.getElementById("year").innerHTML = year;
 });
 
 //--------- Generate a new random word ----------//
